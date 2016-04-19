@@ -22,8 +22,8 @@ class MasterViewController: UITableViewController {
         courses = Course.getExistingCourses()
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
 
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(MasterViewController.insertNewObject(_:)))
-        self.navigationItem.rightBarButtonItem = addButton
+        //let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(MasterViewController.insertNewObject(_:)))
+        //self.navigationItem.rightBarButtonItem = addButton
         
         
         if let split = self.splitViewController {

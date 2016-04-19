@@ -133,14 +133,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="sbR-ix-Khf">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y4W-nt-9L3">
-                                <rect key="frame" x="558" y="11" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="JEX-9P-axG" kind="presentation" identifier="addCourse" id="573-Rq-iSy"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="t1i-yV-frS">
+                            <connections>
+                                <segue destination="JEX-9P-axG" kind="showDetail" identifier="addCourse" id="Y08-Y8-WCS"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -165,7 +161,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="573-Rq-iSy"/>
+        <segue reference="Y08-Y8-WCS"/>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
 </document>

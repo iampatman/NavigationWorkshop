@@ -31,20 +31,30 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        idField.text! = editingCourse.courseId
-        descField.text! = editingCourse.courseDesc
-        lecturerField.text! = editingCourse.lecturer
+        if (editingCourse != nil){
+            print("update current course")
+            idField.text! = editingCourse.courseId
+            descField.text! = editingCourse.courseDesc
+            lecturerField.text! = editingCourse.lecturer
+            navigationItem.title = editingCourse.courseId
+        } else {
+            navigationItem.title = "New course"
+        }
         
         
-        
-        navigationItem.title = editingCourse.courseId
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillAppear(animated)
-        editingCourse.courseId = idField.text!
-        editingCourse.courseDesc = descField.text!
-        editingCourse.lecturer = lecturerField.text!
+        if (editingCourse == nil){
+            print("new course created")
+            editingCourse = Course(id: idField.text!, desc: descField.text!, lecturer: lecturerField.text!)
+        } else {
+            print("updated course")
+            editingCourse.courseId = idField.text!
+            editingCourse.courseDesc = descField.text!
+            editingCourse.lecturer = lecturerField.text!
+        }
     }
 
     override func viewDidLoad() {
