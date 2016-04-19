@@ -63,7 +63,13 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         } else if segue.identifier == "addCourse" {
-            
+            print("add button pressed")
+            let newCourse: Course = Course(id: "", desc: "", lecturer: "")
+            let controller = segue.destinationViewController as! DetailViewController
+            controller.editingCourse = newCourse
+
+            print(newCourse)
+            courses.addObject(newCourse)
         }
     }
 

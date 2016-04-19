@@ -46,16 +46,16 @@ class DetailViewController: UIViewController {
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillAppear(animated)
-        if (editingCourse == nil){
+        /*if (editingCourse == nil){
             print("new course created")
             editingCourse = Course(id: idField.text!, desc: descField.text!, lecturer: lecturerField.text!)
             
-        } else {
+        } else {*/
             print("updated course")
             editingCourse.courseId = idField.text!
             editingCourse.courseDesc = descField.text!
             editingCourse.lecturer = lecturerField.text!
-        }
+        
     }
 
     override func viewDidLoad() {
