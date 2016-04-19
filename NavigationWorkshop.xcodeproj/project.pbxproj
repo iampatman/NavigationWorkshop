@@ -15,6 +15,7 @@
 		3F7157C51CC6D03600510D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7157C31CC6D03600510D07 /* LaunchScreen.storyboard */; };
 		3F7157D01CC6D03600510D07 /* NavigationWorkshopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7157CF1CC6D03600510D07 /* NavigationWorkshopTests.swift */; };
 		3F7157DB1CC6D03600510D07 /* NavigationWorkshopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7157DA1CC6D03600510D07 /* NavigationWorkshopUITests.swift */; };
+		3F7157E91CC6D04F00510D07 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7157E81CC6D04F00510D07 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F7157D61CC6D03600510D07 /* NavigationWorkshopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationWorkshopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7157DA1CC6D03600510D07 /* NavigationWorkshopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWorkshopUITests.swift; sourceTree = "<group>"; };
 		3F7157DC1CC6D03600510D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7157E81CC6D04F00510D07 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3F7157C11CC6D03600510D07 /* Assets.xcassets */,
 				3F7157C31CC6D03600510D07 /* LaunchScreen.storyboard */,
 				3F7157C61CC6D03600510D07 /* Info.plist */,
+				3F7157E81CC6D04F00510D07 /* Course.swift */,
 			);
 			path = NavigationWorkshop;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7157E91CC6D04F00510D07 /* Course.swift in Sources */,
 				3F7157BD1CC6D03600510D07 /* DetailViewController.swift in Sources */,
 				3F7157BB1CC6D03600510D07 /* MasterViewController.swift in Sources */,
 				3F7157B91CC6D03600510D07 /* AppDelegate.swift in Sources */,
