@@ -49,6 +49,7 @@ class DetailViewController: UIViewController {
         if (editingCourse == nil){
             print("new course created")
             editingCourse = Course(id: idField.text!, desc: descField.text!, lecturer: lecturerField.text!)
+            
         } else {
             print("updated course")
             editingCourse.courseId = idField.text!
